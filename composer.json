@@ -1,0 +1,40 @@
+{
+    "name": "zenapply/hris",
+    "description": "Zenapply",
+    "keywords": [
+        "laravel",
+        "zenapply"
+    ],
+    "homepage": "https://github.com/zenapply/hris",
+    "license": "MIT",  
+    "authors": [
+        {
+            "name": "Tyler Arbon",
+            "email": "tylercd100@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4":{
+            "Zenapply\\HRIS\\":"src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zenapply\\HRIS\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^5.5.9|^7.0",
+        "zenapply/php-peoplematter": "^1.0",
+        "zenapply/php-paylocity": "^1.0",
+        "zenapply/common": "^1.0",
+        "bamboohr/api": "^1.1",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.0|^5.0|^6.3"
+    },
+    "suggest": {
+    }
+}

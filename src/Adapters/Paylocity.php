@@ -62,7 +62,7 @@ class Paylocity extends Integration implements HRIS
         ];
 
         $client = $this->getClient();
-        $response = $client->companies($this->creds->getAccountIdentifier())->onboarding->employees->post($payload);
+        $response = $client->companies($this->creds->getAccountIdentifier())->onboarding->employees->post(array_filter($payload));
         
         return $response;
     }

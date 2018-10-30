@@ -5,6 +5,7 @@ namespace Zenapply\HRIS\Adapters;
 use Zenapply\Common\Interfaces\Employable;
 use Zenapply\Common\Interfaces\HRIS;
 use Zenapply\Common\Interfaces\Onboard;
+use Zenapply\Common\Interfaces\CredentialsBasic;
 use Zenapply\PeopleMatter\Models\BusinessUnit as PeopleMatterBusinessUnit;
 use Zenapply\PeopleMatter\Models\Job as PeopleMatterJob;
 use Zenapply\PeopleMatter\Models\Person as PeopleMatterPerson;
@@ -13,6 +14,11 @@ use Carbon\Carbon;
 
 class PeopleMatter extends Integration implements HRIS
 {
+    public function __construct(CredentialsBasic $creds)
+    {
+        $this->creds = $creds;
+    }    
+    
     public function hire(Employable $applicant, Onboard $onboard = null)
     {
         $employee = $this->getClient()->getEmployee($applicant->getEmail());
@@ -44,8 +50,8 @@ class PeopleMatter extends Integration implements HRIS
         return $this->respond($this->getClient()->getJobs());
     }
 
-    protected function getClient()
+    public function getClient()
     {
-        return new PeopleMatterClient($this->creds->getClientId(), $this->creds->getClientSecret(), $this->creds->getAccountIdentifier(), "api.peoplematter.com");
+        return new PeopleMatterClient($this->creds->getUserName(), $this->creds->getPassword(), $this->creds->getAccountIdentifier(), "api.peoplematter.com");
     }    
 }

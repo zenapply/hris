@@ -26,10 +26,10 @@
     "minimum-stability": "stable",
     "require": {
         "php": "^5.5.9|^7.0",
-        "zenapply/php-peoplematter": "^2.0",
+        "zenapply/php-bamboohr": "^1.0",
         "zenapply/php-paylocity": "^1.0",
+        "zenapply/php-peoplematter": "^2.0",
         "zenapply/common": "^2.0",
-        "bamboohr/api": "^1.1",
         "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {

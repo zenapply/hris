@@ -7,7 +7,7 @@ use Zenapply\Common\Interfaces\HRIS;
 use Zenapply\Common\Interfaces\CredentialsApiToken;
 use Zenapply\Common\Interfaces\Onboard;
 use Zenapply\HRIS\Exceptions\HRISException;
-use BambooHR\API\BambooAPI as BambooHrClient;
+use Zenapply\HRIS\BambooHR\BambooHR as BambooHrClient;
 
 class BambooHr extends Integration implements HRIS
 {
@@ -34,14 +34,6 @@ class BambooHr extends Integration implements HRIS
         $client = $this->getClient();
 
         $response = $client->addEmployee($fields);
-
-        if ($response->isError()) {
-            $error = [];
-            $error[] = $response->statusCode;
-            $error[] = "BambooHR Error";
-            $error[] = $response->getErrorMessage();
-            throw new HRISException(implode(" - ", $error), 1);
-        }
 
         return $response;
     }

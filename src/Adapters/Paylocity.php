@@ -6,7 +6,6 @@ use Zenapply\Common\Interfaces\Employable;
 use Zenapply\Common\Interfaces\HRIS;
 use Zenapply\Common\Interfaces\Onboard;
 use Zenapply\Common\Interfaces\CredentialsOAuth2;
-use Zenapply\HRIS\Exceptions\HRISException;
 use Zenapply\HRIS\Paylocity\Paylocity as PaylocityClient;
 
 class Paylocity extends Integration implements HRIS

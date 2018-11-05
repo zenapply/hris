@@ -6,10 +6,10 @@ use Zenapply\Common\Interfaces\Employable;
 use Zenapply\Common\Interfaces\HRIS;
 use Zenapply\Common\Interfaces\Onboard;
 use Zenapply\Common\Interfaces\CredentialsBasic;
-use Zenapply\PeopleMatter\Models\BusinessUnit as PeopleMatterBusinessUnit;
-use Zenapply\PeopleMatter\Models\Job as PeopleMatterJob;
-use Zenapply\PeopleMatter\Models\Person as PeopleMatterPerson;
-use Zenapply\PeopleMatter\PeopleMatter as PeopleMatterClient;
+use Zenapply\HRIS\PeopleMatter\Models\BusinessUnit as PeopleMatterBusinessUnit;
+use Zenapply\HRIS\PeopleMatter\Models\Job as PeopleMatterJob;
+use Zenapply\HRIS\PeopleMatter\Models\Person as PeopleMatterPerson;
+use Zenapply\HRIS\PeopleMatter\PeopleMatter as PeopleMatterClient;
 use Carbon\Carbon;
 
 class PeopleMatter extends Integration implements HRIS

@@ -30,9 +30,9 @@ class Paylocity extends Integration implements HRIS
             'autoPayType' => null,
             'baseRate' => null,
             'city' => $applicant->getCity(),
-            'costCenter1' => null,
-            'costCenter2' => null,
-            'costCenter3' => null,
+            'costCenter1' => $onboard->getCostCenter1(),
+            'costCenter2' => $onboard->getCostCenter2(),
+            'costCenter3' => $onboard->getCostCenter3(),
             'defaultHours' => null,
             'employeeStatus' => null,
             'employmentType' => $onboard->getEmployeeType(), // RFT (Regular Full Time), RPT (Regular Part Time), SNL (Seasonal), TFT (Temporary Full Time), TPT (Temporary Part Time). 

@@ -29,7 +29,7 @@
         "zenapply/php-bamboohr": "^1.0",
         "zenapply/php-paylocity": "^1.0",
         "zenapply/php-peoplematter": "^2.0",
-        "zenapply/common": "^2.0",
+        "zenapply/common": "^3.0",
         "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {

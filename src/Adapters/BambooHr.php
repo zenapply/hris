@@ -18,7 +18,7 @@ class BambooHr extends Integration implements HRIS
 
     public function hire(Employable $applicant, Onboard $onboard)
     {
-        $payload = array_merge($onboard->getPayload(), [
+        $payload = array_merge($onboard->getExtraData(), [
             'hireDate'  => $onboard->getHiredDate(),
             'homeEmail' => $applicant->getEmail(),
             'homePhone' => $applicant->getPhone(),

@@ -2,6 +2,9 @@
 
 All notable changes to `zenapply/hris` will be documented in this file.
 
+### 1.0.6
+- Fixed People Matter
+
 ### 1.0.5
 - Added cost centers to paylocity
 

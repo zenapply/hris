@@ -2,6 +2,9 @@
 
 All notable changes to `zenapply/hris` will be documented in this file.
 
+### 1.0.7
+- Updated to latest People Matter library
+
 ### 1.0.6
 - Fixed People Matter
 

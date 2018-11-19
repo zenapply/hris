@@ -38,7 +38,7 @@ class Paylocity extends Integration implements HRIS
             'employmentType' => $onboard->getEmployeeType(), // RFT (Regular Full Time), RPT (Regular Part Time), SNL (Seasonal), TFT (Temporary Full Time), TPT (Temporary Part Time). 
             'federalFilingStatus' => null,
             'firstName' => $applicant->getFirstName(),
-            'hireDate' => $onboard->getHiredDate(),
+            'hireDate' => $onboard->getHiredDateAsString(),
             'homePhone' => null,
             'lastName' => $applicant->getLastName(),
             'maritalStatus' => null,

@@ -2,6 +2,9 @@
 
 All notable changes to `zenapply/hris` will be documented in this file.
 
+### 1.0.8
+- Fixed hire date issues
+
 ### 1.0.7
 - Updated to latest People Matter library
 

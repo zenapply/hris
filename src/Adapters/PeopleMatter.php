@@ -31,8 +31,8 @@ class PeopleMatter extends Integration implements HRIS
 
         $result = $this->getClient()->hire(
             $person, 
-            new PeopleMatterJob($onboard->getHrisPositionId()),
-            new PeopleMatterBusinessUnit($onboard->getHrisLocationId()), 
+            new PeopleMatterJob(["Id" => $onboard->getHrisPositionId()]),
+            new PeopleMatterBusinessUnit(["Id" => $onboard->getHrisLocationId()]), 
             $onboard->getEmployeeType(), 
             $onboard->getHiredDate()
         );

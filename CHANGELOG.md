@@ -2,6 +2,9 @@
 
 All notable changes to `zenapply/hris` will be documented in this file.
 
+### 1.0.10
+- Fixed Hiring for Peoplematter
+
 ### 1.0.9
 - Fixed people matter hiring
 

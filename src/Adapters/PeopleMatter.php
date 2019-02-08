@@ -21,7 +21,7 @@ class PeopleMatter extends Integration implements HRIS
     
     public function hire(Employable $applicant, Onboard $onboard = null)
     {
-        $employee = $this->getClient()->getEmployee($applicant->getEmployeeId());
+        $employee = $this->getClient()->getEmployeeByEmail($applicant->getEmail());
         $person = new PeopleMatterPerson([
             "FirstName" => $applicant->getFirstName(),
             "LastName" => $applicant->getLastName(),

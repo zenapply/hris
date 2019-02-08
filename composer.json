@@ -28,7 +28,7 @@
         "php": "^5.5.9|^7.0",
         "zenapply/php-bamboohr": "^1.0",
         "zenapply/php-paylocity": "^1.0",
-        "zenapply/php-peoplematter": "^3.0.1",
+        "zenapply/php-peoplematter": "^3.3.0",
         "zenapply/common": "^6.0",
         "guzzlehttp/guzzle": "^6.3"
     },

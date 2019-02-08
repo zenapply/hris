@@ -2,6 +2,9 @@
 
 All notable changes to `zenapply/hris` will be documented in this file.
 
+### 1.0.11
+- Fixed Hiring for Peoplematter by querying for Email address.
+
 ### 1.0.10
 - Fixed Hiring for Peoplematter
 
